@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Portfolio Franco Pini" />
+    <meta
+      name="description"
+      content="Este es el portfolio de un desarrollador miau miau" />
+    <!--
+      <meta
+      name="theme-color"
+      content="#09f" />
+    -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portfolio FranDev</title>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio @FrancoPini 😊</h1>
+      <nav>
+        <a class="link" href="#experiencia">Experiencia</a>
+        <a class="link" href="#proyectos">Proyectos</a>
+        <a class="link" href="#contacto">Contacto</a>
+        <a
+          class="link"
+          href="https://www.jscamp.dev/html-y-css/que-es-css"
+          target="_blank"
+          rel="noreferrer"
+          >SocialMedia</a
+        >
+        <button id="show">Ver más información</button>
+
+        <dialog id="dialog">
+          <h1>¿Sabías que puedes abrir una modal así?</h1>
+          <p>Y es totalmente nativo!</p>
+          <button id="hide">Cerrar modal</button>
+        </dialog>
+
+        <script>
+          window.show.addEventListener("click", () => {
+            window.dialog.showModal();
+          });
+
+          window.hide.addEventListener("click", () => {
+            window.dialog.close();
+          });
+        </script>
+
+        <!--El atributo rel="noreferrer" es para que el navegador no siga el enlace, porque es un link externo, y el problema puede dar todos los datos del usuario de donde viene, como su password o token o enlaces previos"-->
+      </nav>
+    </header>
+
+    <!--  <dialog >
+      <h2>¿Sabias que puedes abrir un modal asi?</h2>
+      <p>Y es totalmente nativo!</p>
+      <button>Cerrar modal</button>
+    </dialog> -->
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/i9M7gdzlA7I?start=80"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <main>
+      <p class="description">
+        <strong>+1 año de experiencia en desarrollo web</strong>, actualmente en
+        busca de nuevos retos, siempre aprendiendo.
+      </p>
+      <h2 id="experiencia">Experiencia</h2>
+      <ul>
+        <li class="list-item">Adevinta-2022</li>
+        <li class="list-item">Hubii-2020</li>
+        <li class="list-item">Naciencia-2019</li>
+      </ul>
+      <img
+        id="photo-image"
+        width="200px"
+        height="200px"
+        title="Foto de gato programador"
+        alt="Una fotografia de un gato programador"
+        src="./images/Captura de pantalla 2025-07-23 164405.png" />
+
+      <h2 id="proyectos">Proyectos realizados</h2>
+      <aside>
+        <header>
+          <h3>Mis tecnologias favoritas</h3>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Node.js</li>
+          </ol>
+        </header>
+      </aside>
+
+      <button>Haz click aqui</button>
+
+      <section>
+        <article>
+          <header>
+            <h4>La página de DevJobs</h4>
+            <img
+              src="./images/image.png"
+              alt="Página de DevJobs"
+              loading="lazy"
+              width="941px"
+              height="461px" />
+            <!--El atributo loading="lazy" es para que la imagen se cargue cuando se hace scroll, para mejorar el rendimiento, y no tener que esperar a que se cargue toda la imagen-->
+          </header>
+          <p>
+            Realice la página web de DevJobs, que conecta a los desarrolladores
+            con las mejores empresas del mundo.
+          </p>
+          <footer>
+            <small> Tecnologías utilizadas: HTML, CSS, Javascript </small>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <h2>Preguntas frecuentes</h2>
+
+        <details>
+          <summary>¿Qué estudios tienes?</summary>
+          <p>
+            Estudié en la Facultad de Informática, la carrera de Desarrollo de
+            Software.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Cuáles son tus hobbies?</summary>
+          <p>Tengo un gato, y me gusta jugar al fútbol y hacer deporte.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué es lo que más te gusta hacer?</summary>
+          <p>
+            Me gusta hacer deporte, jugar al fútbol y ver películas con mi gato.
+          </p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Formulario de contacto</h2>
+        <form method="post" action="/">
+          <fieldset>
+            <!--Es una etiqueta que agrupa los diferentes tipos de inputs-->
+            <legend>información personal</legend>
+            <label for="name">Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="pepe mugica"
+              required />
+            <div>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Ingresa tu Email"
+                required />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>información Adicional</legend>
+            <div>
+              <label>Telefono:</label>
+              <input
+                type="tel"
+                id="number"
+                placeholder="Ingrese su telefono"
+                required />
+            </div>
+          </fieldset>
+          <input type="submit" value="Enviar contacto" />
+
+          <fieldset>
+            <legend>Otros</legend>
+            <div>
+              <label for="why">¿Por qué quieres contactar?</label>
+              <select name="why" id="why">
+                <option value="1">Trabajo</option>
+                <option value="2">Duda</option>
+                <option value="3">Más información</option>
+              </select>
+            </div>
+            <div>
+              <datalist id="lenguages">
+                <option value="Javascript"></option>
+                <option value="Python"></option>
+                <option value="C#"></option>
+                <option value="Rust"></option>
+              </datalist>
+              <label>
+                ¿Con que lenguaje quieres que te ayude?
+                <input list="lenguages" name="lenguages" />
+              </label>
+            </div>
+            <div>
+              <label for="terms">¿Aceptas los terminos?</label>
+              <input type="checkbox" id="terms" name="terms" required />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <small>© 2025 DevJobs. Todos los derechos reservados.</small>
+
+      <a href="mailto:Oq2Ct@example.com">Enviame un correo</a>
+      <a href="tel:123456789">Llamar por telefono </a>
+    </footer>
+  </body>
+</html>

@@ -1,1 +1,0 @@
--La etiqueta <meta name="description" content="Aqui iria el contenido de cuando se realiza la busqueda, y sale la descripcion">

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbfbff;
+  font-family: "sistema-ui", sans-serif; /*En caso de que no pueda cargar una fuente, se usara la fuente por defecto, esto se define como fallback.*/
+}
+
+h1 {
+  color: #09f;
+}
+
+.link {
+  color: #0099ff81;
+  text-decoration: none;
+}
+
+/*Otra psuedoclase es :focus, se usa cuando se hace click en un elemento,por ejemplo en un input, o en un textarea.*/
+.link:focus {
+  outline: #6323b2 1px solid;
+}
+
+#show {
+  background: #09f;
+  color: fff;
+  border: none;
+}
+
+/*El efecto hover se aplica cuando el cursor pasa por encima del elemento, a esto se le llama pseudoclase, una pseudoclase es un selector que se aplica a un elemento cuando se cumple una condición. a los psuedoclases se las identifican con dos puntos (:).*/
+#show:hover {
+  background: #fff;
+  color: #09f;
+  border: 1px solid #09f;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/*Luego tenemos otra psuedoclase que se llama :active, se usa cuando se hace click en un elemento.*/
+#show:active {
+  outline: 6px solid #6323b2;
+}
+
+/*En los dos ejemplos de abajo, podemos observar dos pseudoelementos, lo que indica el primero es el primer hijo y el segundo es el ultimo hijo, */
+li:first-child {
+  color: #ffc0cb;
+}
+li:last-child {
+  color: #710075;
+}
+
+
