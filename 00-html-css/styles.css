@@ -221,7 +221,6 @@ body {
   color: #7b899e;
 }
 
-/* opcional: ocultar la regla .hero__image si ya no se usa */
 .hero__image {
   display: none;
 }
@@ -231,8 +230,10 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin: 5rem auto;
+  padding: 5rem 0;
   gap: 2rem;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
 }
 
 .features__header {
@@ -247,9 +248,41 @@ body {
 }
 
 .features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.features__grid > * {
   display: flex;
-  flex-direction: row;
-  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.features__grid > *:hover {
+  transform: translateY(-5px);
+}
+
+.features__grid h3 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.features__grid p {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .card__icon {
@@ -285,9 +318,171 @@ body {
 .card {
   width: 100%;
   max-width: 400px;
-  background: var(--text-muted);
+  background: #1e293b;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 180ms ease, box-shadow 220ms ease;
 }
+
+.card__title {
+  font-size: 18px;
+}
+
+.site-footer {
+  text-align: center;
+  margin: 2rem auto;
+  color: var(--text-secondary);
+}
+
+/* ------------------ Responsive (1440px -> 375px) ------------------ */
+
+@media (max-width: 1440px) {
+  .hero__title {
+    font-size: 42px;
+  }
+  .features__grid {
+    max-width: 1100px;
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 3.5rem 1rem;
+  }
+  .hero__title {
+    font-size: 36px;
+  }
+  .search-form {
+    max-width: 720px;
+    width: 95%;
+  }
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .features__grid > * {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .hero__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero__lead {
+    font-size: 15px;
+  }
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 720px;
+  }
+  .search-form__input {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+  .btn--search {
+    width: 100%;
+    padding: 0.8rem;
+  }
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .features__grid > * {
+    padding: 1.25rem;
+  }
+  .card__icon {
+    width: 44px;
+    height: 44px;
+  }
+  .card__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 2.5rem 0.75rem;
+  }
+  .hero__title {
+    font-size: 26px;
+  }
+  .hero__oportunidad {
+    font-size: 1.05rem;
+  }
+  .search-form {
+    padding: 0.4rem;
+    width: 100%;
+    max-width: 520px;
+  }
+  .search-form__input {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+  .features {
+    padding: 2rem 0;
+  }
+  .features__grid > * {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .card__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .card__icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .card {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero__title {
+    font-size: 22px;
+  }
+  .hero__lead {
+    font-size: 14px;
+  }
+  .hero__oportunidad {
+    font-size: 1rem;
+  }
+  .features__grid {
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+  .features__grid > * {
+    padding: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .card__icon {
+    width: 36px;
+    height: 36px;
+  }
+  .card__icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  .features__grid h3 {
+    font-size: 1.05rem;
+  }
+}
+
+/* end responsive */
