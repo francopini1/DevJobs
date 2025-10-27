@@ -253,3 +253,7 @@ Te responderé cada pregunta en detalle:
      - Mostrar modales o popups
 
 El overlay en tu código específico está creado usando el pseudoelemento `::before` con un gradiente semitransparente, posicionado absolutamente para cubrir todo el hero, y con un `z-index` bajo para asegurarse de que el contenido principal aparezca por encima.
+
+**Css-midutips**
+
+# Css tiene variables, en la cual se denomina Custom-propierties

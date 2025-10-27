@@ -289,8 +289,9 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 64px;
+  height: 64px;
+  padding: 1rem;
   color: #0099ff;
   margin-bottom: 10px;
   background: rgba(0, 153, 255, 0.12);
