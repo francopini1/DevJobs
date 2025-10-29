@@ -67,6 +67,8 @@ body {
   font-size: 1rem;
   color: var(--text-primary);
   letter-spacing: 0.1rem;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 /*Icono del logo*/
@@ -137,7 +139,7 @@ body {
 /* new: usar imagen como background del hero y que llegue hasta el input */
 .hero {
   position: relative;
-  background-image: url("./background.webp");
+  background-image: url("./images/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

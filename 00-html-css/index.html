@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./images/en.devjobs.de_favicon_16x16.png" />
     <meta
       name="description"
       content="DevJobs es la plataforma por excelencia para desarrolladores, donde podrás encontrar el trabajo de tus sueños" />
@@ -29,13 +30,19 @@
           <path d="M8 4l-5 8l5 8" />
           <path d="M16 4l5 8l-5 8" />
         </svg>
-        <h2 class="site-brand__title">DevJobs</h2>
+        <a class="site-brand__title" href="index.html">DevJobs</a>
       </div>
 
+      <!--Los atributos de rel noopener es para que no abra ciertos datos, y el noreferrer es para que no se muestre la referencia por ejemplo de donde viene el usuario desde la url-->
       <nav class="nav">
         <div class="nav__links">
           <a class="nav__link" href="">Buscar</a>
-          <a class="nav__link" href="">Empleos</a>
+          <a
+            class="nav__link"
+            rel="noopener noreferrer"
+            href="empleos/empleos.html"
+            >Empleos</a
+          >
           <a class="nav__link" href="">Empresas</a>
           <a class="nav__link" href="">Salarios</a>
         </div>
@@ -52,7 +59,7 @@
         <img
           loading="lazy"
           class="hero__image"
-          src="./background.webp"
+          src="./images/background.webp"
           alt="Es una fondo de desarrolladores programando" />
         <h1 class="hero__title">Encuentra el trabajo de tus sueños</h1>
         <p class="hero__lead">

@@ -257,3 +257,43 @@ El overlay en tu código específico está creado usando el pseudoelemento `::be
 **Css-midutips**
 
 # Css tiene variables, en la cual se denomina Custom-propierties
+
+Claro. Aquí tienes la explicación en formato Markdown:
+
+# background-size: cover
+
+La propiedad CSS `background-size: cover;` sirve para ajustar el tamaño de una imagen de fondo de un elemento de modo que cubra completamente el área visible del elemento, sin importar sus dimensiones. Algunas notas clave:
+
+- La imagen se escala para cubrir todo el área del elemento.
+- Mantiene las proporciones de la imagen (no estira), por lo que puede recortarse (crop) una parte fuera de la vista.
+- Asegura que no queden espacios en blanco alrededor de la imagen de fondo, incluso si el tamaño del elemento cambia (por ejemplo, en diseño responsive).
+
+## Cuándo usarla
+
+- Cuando quieres una imagen de fondo que llene toda la caja, como fondos de cabeceras, hero sections o tarjetas con fondo visualmente impactante.
+- Si toleras que parte de la imagen se recorte para mantener la cobertura completa.
+
+## Ejemplos prácticos
+
+- Si el elemento tiene una relación de aspecto distinta a la de la imagen, la imagen se escalará hasta que una de las dimensiones (ancho o alto) cubra completamente esa dimensión, y la otra puede exceder y recortarse.
+- Combinado con `background-position`, puedes decidir qué parte de la imagen se mantiene visible (p. ej., `background-position: center center;` para centrarla).
+
+## Código mínimo
+
+```css
+.hero {
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-position: center center; /* opcional, para centrar la imagen */
+  background-repeat: no-repeat; /* opcional, suele usarse con cover */
+}
+```
+
+## Alternativas/consideraciones
+
+- Si prefieres que toda la imagen se vea sin recortes, podrías usar `background-size: contain;`, pero puede dejar espacio alrededor.
+- Si necesitas controlar más el recorte, juega con `background-position` (p. ej., `top left`, `50% 20%`, etc.).
+
+## ¿Necesitas un ejemplo aplicado?
+
+¿Quieres un ejemplo específico con tu caso (tamaños de contenedor, imágenes o diseño responsive)?

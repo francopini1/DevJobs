@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./empleos.css" />
+    <link rel="icon" href="./images/en.devjobs.de_favicon_16x16.png" />
+    <meta
+      name="description"
+      content="Listado con empleos y filtros para encontrar el trabajo de tus sueños" />
+    <title>DevJobs - Empleos</title>
+  </head>
+  <!--Shortcut Ctrl + f -> buscador de texto-->
+  <body class="site-body">
+    <header class="site__header" role="banner">
+      <div class="brand">
+        <svg
+          class="icon-nav"
+          fill="none"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            clip-rule="evenodd"
+            d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+            fill="currentColor"
+            fill-rule="evenodd"></path>
+        </svg>
+        <a class="brand__link" href="../index.html">DevJobs</a>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <div class="nav-links">
+            <a class="nav-link" href="">Inicio</a>
+            <a class="nav-link" href="">Empleos</a>
+            <a class="nav-link" href="">Empresas</a>
+            <a class="nav-link" href="">Salarios</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="nav-user">
+        <a class="nav-link-push" href="">Subir CV</a>
+        <img
+          class="user-avatar"
+          width="36px"
+          height="36px"
+          src="images/ed7055b68adec22bfa8a88d441e83e9a.png"
+          alt="Imagen de usuario" />
+      </div>
+    </header>
+    <main class="site-main">
+      <div class="hero-2">
+        <h1 class="hero__title">Encuentra tu próximo trabajo</h1>
+        <p class="hero__subtitle">
+          Explora miles de oportunidades en el sector Tecnológico
+        </p>
+      </div>
+      <form class="search__form" role="search">
+        <svg
+          class="icon icon--search"
+          aria-label="buscar"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Buscar trabajos, empresas o habilidades" />
+      </form>
+      <div class="filters" aria-label="Filtros de búsqueda">
+        <select class="filter" name="why" id="why-job">
+          <option value="1">Trabajo</option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </select>
+        <select class="filter" name="why" id="why-location">
+          <option value="1">Ubicación</option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </select>
+        <select class="filter" name="why" id="why-contract">
+          <option value="1">Tipo de contrato</option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </select>
+        <select class="filter" name="why" id="why-experience">
+          <option value="1">Nivel de experiencia</option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </select>
+      </div>
+      <h3 class="section-title">Resultados de búsqueda</h3>
+      <section class="results" aria-label="Resultados de búsqueda">
+        <article class="job-card">
+          <h4 class="job-title">Ingeniero de Software</h4>
+          <p class="job-meta">Tech Solutions Inc. | Remoto</p>
+          <p class="job-desc">
+            Buscamos un Ingeniero de Software con experiencia en desarrollo web
+            y conocimientos en JavaScript, React y Node.js. El candidato ideal
+            debe ser capaz de trabajar en equipo y tener buenas habilidades de
+            comunicación.
+          </p>
+          <button class="btn btn--primary" aria-label="Aplicar">Aplicar</button>
+        </article>
+
+        <article class="job-card">
+          <h4 class="job-title">Analista de Datos</h4>
+          <p class="job-meta">Data Driven Co. | Ciudad de México</p>
+          <p class="job-desc">
+            Estamos buscando analistas de datos con experiencia en el manejo de
+            grandes conjuntos de datos y herramientas de visualización. Se
+            requiere conocimiento en SQL, Python y R.
+          </p>
+          <button class="btn btn--primary" aria-label="Aplicar">Aplicar</button>
+        </article>
+
+        <article class="job-card">
+          <h4 class="job-title">Desarrollador de aplicaciones Móviles</h4>
+          <p class="job-meta">Mobile Apps Ltd. | Guadalajara</p>
+          <p class="job-desc">
+            Buscamos un desarrollador de aplicaciones móviles con experiencia en
+            iOS y/o Android. El candidato debe tener conocimientos en Swift,
+            Kotlin y el desarrollo de interfaces de usuario
+          </p>
+          <button class="btn btn--primary" aria-label="Aplicar">Aplicar</button>
+        </article>
+
+        <article class="job-card">
+          <h4 class="job-title">Ingeniero de DevOps</h4>
+          <p class="job-meta">Cloud Services SA | Remoto</p>
+          <p class="job-desc">
+            Estamos buscando un ingeniero de DevOps con experiencia en la
+            gestión de infraestructuras en la nube, automatización de procesos y
+            herramientas de integración continua. Se requiere conocimiento en
+            AWS, Azure o GCP
+          </p>
+          <button class="btn btn--primary" aria-label="Aplicar">Aplicar</button>
+        </article>
+
+        <article class="job-card">
+          <p class="job-meta">Tech Solutions Inc. | Remoto</p>
+          <p class="job-desc">
+            Buscamos un Ingeniero de Software con experiencia en desarrollo web
+            y conocimientos en JavaScript, React y Node.js. El candidato ideal
+            debe ser capaz de trabajar en equipo y tener buenas habilidades de
+            comunicación.
+          </p>
+          <button class="btn btn--primary" aria-label="Aplicar">Aplicar</button>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-pagination" role="navigation" aria-label="Página">
+        <button aria-label="Anterior" disabled>&lt;</button>
+        <button aria-current="page">1</button>
+        <button aria-label="Página 2">2</button>
+        <button aria-label="Página 3">3</button>
+        <button aria-label="Página 4">4</button>
+        <button aria-label="Página 5">5</button>
+        <button aria-label="Siguiente" disabled>&gt;</button>
+      </div>
+    </footer>
+  </body>
+</html>
