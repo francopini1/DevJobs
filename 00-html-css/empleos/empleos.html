@@ -54,7 +54,10 @@
           Explora miles de oportunidades en el sector Tecnológico
         </p>
       </div>
-      <form class="search__form" role="search">
+      <form
+        class="search__form"
+        role="search"
+        onclick="document.querySelector('.search-input').focus()">
         <svg
           class="icon icon--search"
           aria-label="buscar"
@@ -145,28 +148,50 @@
           </p>
           <button class="btn btn--primary" aria-label="Aplicar">Aplicar</button>
         </article>
-
-        <article class="job-card">
-          <p class="job-meta">Tech Solutions Inc. | Remoto</p>
-          <p class="job-desc">
-            Buscamos un Ingeniero de Software con experiencia en desarrollo web
-            y conocimientos en JavaScript, React y Node.js. El candidato ideal
-            debe ser capaz de trabajar en equipo y tener buenas habilidades de
-            comunicación.
-          </p>
-          <button class="btn btn--primary" aria-label="Aplicar">Aplicar</button>
-        </article>
       </section>
     </main>
     <footer class="site-footer" role="contentinfo">
       <div class="footer-pagination" role="navigation" aria-label="Página">
-        <button aria-label="Anterior" disabled>&lt;</button>
-        <button aria-current="page">1</button>
-        <button aria-label="Página 2">2</button>
-        <button aria-label="Página 3">3</button>
-        <button aria-label="Página 4">4</button>
-        <button aria-label="Página 5">5</button>
-        <button aria-label="Siguiente" disabled>&gt;</button>
+        <nav
+          aria-label="Paginación de resultados"
+          class="pagination"
+          role="navigation">
+          <ul class="pagination-list">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M15 6l-6 6l6 6" />
+            </svg>
+            <a href="#" aria-label="Página 1" class="active">1</a>
+            <a href="#" aria-label="Página 2" class="active">2</a>
+            <a href="#" aria-label="Página 3" class="active">3</a>
+            <a href="#" aria-label="Página 4" class="active">4</a>
+            <a href="#" aria-label="Página 5" class="active">5</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 6l6 6l-6 6" />
+            </svg>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>
